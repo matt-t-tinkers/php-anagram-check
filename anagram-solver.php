@@ -13,11 +13,11 @@ function anagram_solver($word1, $word2){
     $arr2 = str_split($cleanWord2);
     
     // Sort the arrays without maintaining indexes.
-	sort($arr1);
+    sort($arr1);
     sort($arr2);
     
     // See if there are any differences between the arrays.
-	$arrayDiff = array_diff_assoc($arr1, $arr2);
+    $arrayDiff = array_diff_assoc($arr1, $arr2);
     
     // If there are no differences then the outputted array will be empty.
     $result = empty($arrayDiff);
@@ -37,4 +37,3 @@ echo ('<br>');
 echo $test3;  // Expected result "These words are anagrams". Confirmed.
 echo ('<br>');
 
-?>
